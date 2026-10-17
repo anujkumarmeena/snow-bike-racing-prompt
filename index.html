@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Snow Bike Racing Game Prompt</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #1a1a1a;
+    }
+    h1 { color: #1e40af; }
+    pre {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      font-size: 14px;
+    }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <h1>3D Snow Bike Racing Game Prompt</h1>
+  <p>Shareable prompt for a fun, highly polished 3D Snow Bike Racing game.</p>
+  <p><a href="https://github.com/anujkumarmeena/snow-bike-racing-prompt">View on GitHub</a> | <a href="https://raw.githubusercontent.com/anujkumarmeena/snow-bike-racing-prompt/main/snow-bike-racing-prompt.txt">Raw text</a></p>
+  <pre id="prompt">Loading...</pre>
+  <script>
+    fetch('https://raw.githubusercontent.com/anujkumarmeena/snow-bike-racing-prompt/main/snow-bike-racing-prompt.txt')
+      .then(r => r.text())
+      .then(text => { document.getElementById('prompt').textContent = text; })
+      .catch(() => { document.getElementById('prompt').textContent = 'Could not load prompt. Please view the raw file.'; });
+  </script>
+</body>
+</html>
